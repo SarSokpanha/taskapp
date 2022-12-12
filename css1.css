@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+:root{
+    --discord: #7289da;
+    --Discord-bg: #36393F;
+    --Discord-main: #1f2024;
+    --Discord-hover: #2c2e33;
+}
+.inline-icon {
+    vertical-align: bottom;
+}
+
+.container {
+    background-color: var(--Discord-bg);
+    min-height: 576px;
+    width: 720px;
+    margin: 0 auto;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+    position: relative;
+}
+body {
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+
+.nav-left .acc-info,
+.nav-left .search,
+.nav-left .category{
+    padding: 0.7rem;
+}
+
+.nav-left .acc-info {
+    
+    font-size: 1rem;
+    line-height: 0.1;
+    display: flex;
+}
+
+.nav-left .acc-info img {
+ width: 70px;
+ height: 70px;
+ border-radius: 50%;
+ margin-right:10px ;
+}
+
+.nav-left .acc-info .infor h2 {
+font-size: 1.2rem;
+}
+.nav-left .acc-info .infor p, 
+.nav-left .acc-info .infor span {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.nav-left .acc-info .infor span:hover{
+    cursor: pointer;
+}
+
+.nav-left .search input[type="text"]{
+    width: 97%;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    border-bottom: white solid 2px;
+    color: white;
+}
+.nav-left .category ul, .main .wrapper .task-list ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.nav-left .category ul li{
+    padding: 5px 0;
+    justify-content: space-between;
+}
+
+.nav-left .category ul li:hover{
+    background-color: var(--Discord-hover);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.nav-left .category ul li span{
+    margin: 0 5px 0 0;
+    justify-content: space-between;
+
+}
+.nav-left .category ul li .space{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-left .add-new-cat{
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.nav-left .add-new-cat a{
+    display: block;
+  width: 100%;
+  border: none;
+  padding: 7px 60px 7px 0.7rem;
+  font-size: 16px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.nav-left .add-new-cat a span{
+    margin: 0 20px 0 0;
+}
+
+.main{
+    background-color: var(--Discord-main);
+}
+.main .wrapper{
+    padding: 25px;
+}
+.main .wrapper .task-title h3{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.main .wrapper .task-list ul{
+    margin-top: 20px;
+}
+.main .wrapper .task-list ul li{
+    width: 100%;
+    padding: 7px 5px;
+    background-color: var(--Discord-bg);
+    margin-bottom: 2px;
+    min-height: 40px;
+}
+.main .wrapper .task-list ul li .desc{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.6;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+#add-new{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 355px;
+    background-color: var(--Discord-bg);
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#add-new input[type="text"],.category ul li input{
+    width: 270px;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+#add-new span{
+    margin-right: 15px;
+}
+.badge {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 50%;
+  }
